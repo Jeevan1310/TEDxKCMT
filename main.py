@@ -58,10 +58,11 @@ async def on_message(message):
   if msg.startswith('=commands'):
     embed1 = discord.Embed(title=f"Bot Commands 1) =help", description="**This Commands helps you to provide support from Server Handler in case of emergency**",colour=0x89CEEB)
     embed2 = discord.Embed(title=f"Bot Commands 2) =tedxkcmt", description="**This Commands helps you to provide more info about TEDxKCMT that includes a short history of our organisation**",colour=0x89CEEB)
-    embed2 = discord.Embed(title=f"Bot Commands 3) =instagram",
+    embed3 = discord.Embed(title=f"Bot Commands 3) =instagram",
     description="**This command helps you to provide details about our insta handle if you you want know any more go and check there**",colour=0x89CEEB)
     await channel.send(embed=embed1,delete_after=60.0)
     await channel.send(embed=embed2,delete_after=60.0)
+    await channel.send(embed=embed3,delete_after=60.0)
     print('User used  command')
   else:
     print('used else condition')
