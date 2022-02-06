@@ -27,7 +27,7 @@ async def on_message(message):
 
   if msg.startswith('=help'):
     user=message.author
-    embed = discord.Embed(title=f"Hello User", description=">>> **Our <@&878335486429630505> just heared your voice of help they will assist you soon...**", colour=0x87CEEB)
+    embed = discord.Embed(title=f"Hello User", description=">>> **Our <@&878335486429630505> just heared your voice for help they will assist you soon...**", colour=0x87CEEB)
     await channel.send(embed=embed)
     reaction_channel = client.get_channel(938100802831134740)
     await reaction_channel.send(f'{user.mention} has asked help moderators please respond <@&878335486429630505>')
