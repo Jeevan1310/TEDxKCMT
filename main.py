@@ -35,7 +35,7 @@ async def on_message(message):
 
 
   if msg.startswith('=organiser'):
-    await channel.send('https://user-images.githubusercontent.com/81223681/151385150-e79601f3-f2c3-495a-b902-cfacbd4c616b.jpg',delete_after=30.0)
+    await channel.send('https://user-images.githubusercontent.com/81223681/151385150-e79601f3-f2c3-495a-b902-cfacbd4c616b.jpg',delete_after=16.0)
 
 
 
