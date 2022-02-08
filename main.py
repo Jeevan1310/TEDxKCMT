@@ -71,7 +71,7 @@ async def on_message(message):
     print('used else condition')
   
 
-  #role function 
+  #role function Novice
   if message.content.startswith(f'#intro-tedx'):
     user=message.author
     role=discord.utils.get(user.guild.roles,name="NOVICE")
@@ -81,6 +81,19 @@ async def on_message(message):
     await reaction_channel.send(f'{user.mention} has posted a introduction and given the role <@&936284676954411050> Moderators please verify the activity')
   else:
     print('some people used other words and its solved')
+  
+  #role function Volunteer
+  if msg.startswith(f'#intro-volunteer'):
+    user=message.author
+    role=discord.utils.get(user.guild.roles,name="Volunteer")
+    await user.add_roles(role)
+    await message.add_reaction('\U00002705')
+    reaction_channel = client.get_channel(938100802831134740)
+    await reaction_channel.send(f'{user.mention} has posted a volunteer introduction and given the role <@&878933118625644594> Moderators please verify the activity')
+  else:
+    print('some people used other words and its solved')
+
+
 
 @client.event #welcome message
 async def on_member_join(member):
