@@ -68,7 +68,7 @@ async def on_message(message):
     await channel.send(embed=embed3,delete_after=60.0)
     print('User used  command')
   else:
-    print('used else condition')
+    print('used else condition and played')
   
 
   #role function Novice
