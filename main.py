@@ -52,6 +52,9 @@ async def on_message(message):
     embed = discord.Embed(title=f"WEBSITE : https://tedxkcmt.com/", description="TEDxKCMT Official Website", colour=0x89CEEB)
     await channel.send(embed=embed)
     print('User used web command')
+  if msg.startswith('=warn'):
+    embed=discord.Embed(title=f'Server Moderator Warned user for the for spamming in TEDxKCMT server'a
+
 
   if msg.startswith('=instagram'):
     embed = discord.Embed(title=f"INSTAGRAM : https://www.instagram.com/tedxkcmtofficial/", description="TEDxKCMT Official Instagram Handle", colour=0x89CEEB)
