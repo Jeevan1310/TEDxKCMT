@@ -97,7 +97,7 @@ async def on_message(message):
 
 
 
-@client.event #welcome message
+@client.event #welcome message of
 async def on_member_join(member):
   guild = client.get_guild(878039808713293845)
   channel = guild.get_channel(935150094691500103)
