@@ -45,7 +45,6 @@ async def on_message(message):
     await channel.send(embed=embed , delete_after=15.0)
     reaction_channel=client.get_channel(938100802831134740)
     await reaction_channel.send('Bot performed and sucessfully deleted message')
-    await msg.delete()
     print('User used know command')
 
   if msg.startswith('=website'):
