@@ -34,8 +34,9 @@ async def on_message(message):
     print('User used help command')
 
 
-  if msg.startswith('=organiser'):
-    await channel.send('https://user-images.githubusercontent.com/81223681/151385150-e79601f3-f2c3-495a-b902-cfacbd4c616b.jpg',delete_after=16.0)
+  if msg.startswith('!organizer'):
+    await message.channel.send('https://user-images.githubusercontent.com/81223681/170876578-e7d276ce-1ccb-41af-a9e1-e8da0f958c34.png')
+    await message.delete()
 
 
 
